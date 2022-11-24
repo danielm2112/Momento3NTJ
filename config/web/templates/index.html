@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/styles/estilosHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <header>
+
+        {% include './shared/menu.html' %}
+
+    </header>
+
+    <main>
+
+        <div class="banner">
+            <img src="../static/img/elherbario_logo.svg" alt="">
+        </div>
+
+        <section>
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-5 text-center">
+                        <img src="../static/img/plato.png" alt="foto" class="img-fluid w-100">
+                        <h1>LA HUERTA DEL HERBARIO</h1>
+                        <p  class="wow animate__animated animate__fadeInUp animate__slow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veritatis officiis quis assumenda id nobis eius, explicabo quidem, voluptas error animi. Aliquid quibusdam at, animi quidem culpa, facere dolore maiores, soluta sequi eligendi labore necessitatibus vel natus exercitationem? Deleniti nesciunt, quod mollitia perspiciatis necessitatibus inventore illum minus voluptates adipisci dolorem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container-fluid my-5 g-0">
+                <div class="row text-center">
+                    <div class="col-12 col-md-6 align-self-center">
+                        <img src="../static/img/huerta.jpeg" alt="raton" class="img-fluid w-100">
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img src="../static/img/vegetal_1.jpg" alt="serv1" class="img-fluid w-100">
+                                <h2 class="fw-bold wow animate__animated animate__fadeInUp animate__slow">SERVICIO EMPRESARIAL</h2>
+                                <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos perspiciatis, voluptate error sapiente vel asperiores repudiandae doloribus dicta magnam natus incidunt eaque sit et iusto voluptas. Veniam voluptatum consequatur dolorem.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="../static/img/vegetal_2.jpg" alt="serv2" class="img-fluid w-100">
+                                <h2 class="fw-bold wow animate__animated animate__fadeInUp animate__slow">SERVICIO CATERING</h2>
+                                <p class="wow animate__animated animate__fadeInUp animate__slow">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos perspiciatis, voluptate error sapiente vel asperiores repudiandae doloribus dicta magnam natus incidunt eaque sit et iusto voluptas. Veniam voluptatum consequatur dolorem.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container my-5">
+                <div class="row fondo2 justify-content-center p-5">
+                    <div class="col-12 text-white fw-bold text-center mb-3">
+                        <h2>NUESTROS PLATOS:</h2>
+                    </div>
+                    <div class="col-12 col-md-3 wow animate__animated animate__fadeInLeft animate__slow">
+                        <img src="../static/img/plato1.jpg" alt="img1" class="img-fluid w-100 zoom">
+                    </div>
+                    <div class="col-12 col-md-3 wow animate__animated animate__fadeInDown animate__slow">
+                        <img src="../static/img/plato2.jpg" alt="img1" class="img-fluid w-100 zoom">
+                    </div>
+                    <div class="col-12 col-md-3 wow animate__animated animate__fadeInRight animate__slow">
+                        <img src="../static/img/plato3.jpg" alt="img1" class="img-fluid w-100 zoom">
+                    </div>
+                    <div class="col-12 text-center my-4">
+                        <a href="{% url 'menu' %}" class="btn btn-outline-dark">Ver menú</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <img src="../static/img/elherbario_logo.svg" alt="footer" class="img-fluid w-100">
+                    <p class="fw-bold">Lunes a Jueves: 10:00 AM a 9:00 PM</p>
+                    <p class="fw-bold">Viernes a Domingos: 10:00 AM a 12:00 PM</p>
+                    <p class="fw-bold">Medellin</p>
+                    <p class="fw-bold">Cra. 35 #7-108, El Poblado, Medellín</p>
+                    <p class="fw-bold">3046104275</p>
+                </div>
+                <div class="col-12 col-md-8">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63462.861889109554!2d-75.63561634179686!3d6.207024900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429a96fcffe55%3A0x61f5f6024f48d1d8!2sProvenza!5e0!3m2!1ses!2sco!4v1666393666319!5m2!1ses!2sco" class="w-100" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../static/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
